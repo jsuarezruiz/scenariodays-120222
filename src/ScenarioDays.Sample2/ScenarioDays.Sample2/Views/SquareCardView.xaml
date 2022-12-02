@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScenarioDays.Sample2.Views.SquareCardView">
+    <ContentView.Content>
+        <Border VerticalOptions="Start" BackgroundColor="White" Margin="5,5,5,5">
+            <Grid BackgroundColor="White" VerticalOptions="Start" HeightRequest="230">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70*" />
+                    <RowDefinition Height="30*" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Aspect="AspectFill" Source="{Binding ImageUrl}" />
+                <BoxView Grid.Row="0" Opacity=".2" Color="Black" />
+                <ImageButton Grid.Row="0" Margin="5" VerticalOptions="Start" HorizontalOptions="End" Aspect="AspectFit" HeightRequest="30" WidthRequest="30" BackgroundColor="Transparent" Source="more_vert_white" />
+                <ImageButton Grid.Row="0" Margin="5" VerticalOptions="End" HorizontalOptions="End" Aspect="AspectFit" HeightRequest="30" WidthRequest="30" BackgroundColor="Transparent" Source="play_circle_filled_white" />
+                <Label Margin="10" Grid.Row="1"  Style="{StaticResource Browse_BlackLabel}" Text="{Binding Title}" />
+            </Grid>
+        </Border>
+    </ContentView.Content>
+</ContentView>
