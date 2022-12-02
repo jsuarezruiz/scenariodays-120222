@@ -3,16 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ScenarioDays.Sample3.MainPage">
 
-   <ContentPage.Content>
+    <ContentPage.Content>
         <Grid Padding="25,0,0,0" ColumnDefinitions="Auto,*,*,Auto" RowDefinitions="Auto,Auto,*">
             <!-- 1. Main header-->
 
             <!--Points-->
-            <Image Grid.Row="0" Grid.Column="0" Source="Points" HeightRequest="25" />
+            <Image Grid.Row="0" Grid.Column="0" Source="points.png" HeightRequest="25" />
             <!--Cart icon-->
-            <Image Grid.Row="0" Grid.Column="1" Source="Find" HeightRequest="30" HorizontalOptions="End"/>
+            <Image Grid.Row="0" Grid.Column="1" Source="find.png" HeightRequest="30" HorizontalOptions="End"/>
             <!--Cart heart-->
-            <Image Grid.Row="0" Grid.Column="2" Source="Heart_" HeightRequest="30" Margin="30,0,0,0" HorizontalOptions="Start"/>
+            <Image Grid.Row="0" Grid.Column="2" Source="hearttwo.png" HeightRequest="30" Margin="30,0,0,0" HorizontalOptions="Start"/>
             <!--Cart counter-->
             <Border Grid.Row="0" Grid.Column="3"
                     WidthRequest="140" StrokeShape="RoundRectangle 0,0,20,0" 
@@ -47,7 +47,7 @@
                                 <Border StrokeShape="RoundRectangle 20,20,20,20"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
                                     <Image Source="{Binding Picture}" Aspect="AspectFill"/>
                                 </Border>
-                                <Button Grid.Row="0" Grid.Column="1" Margin="0,7,5,0" ImageSource="Heart24" VerticalOptions="Start" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="20" BackgroundColor="White"/>
+                                <Button Grid.Row="0" Grid.Column="1" Margin="0,7,5,0" ImageSource="hearttwo.png" VerticalOptions="Start" HorizontalOptions="End" HeightRequest="40" WidthRequest="40" CornerRadius="20" BackgroundColor="White"/>
                                 <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Name}" Margin="0,13,0,6"/>
                                 <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
                                     <Label.FormattedText>
